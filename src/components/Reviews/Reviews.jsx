@@ -23,7 +23,7 @@ const Reviews = () => {
       {reviews?.length > 0 ? (
         <ReviewsList list={reviews} />
       ) : (
-        `Sorry, we don't have reviews for this movie`
+        `Sorry, we don't have any reviews for this movie`
       )}
     </>
   );

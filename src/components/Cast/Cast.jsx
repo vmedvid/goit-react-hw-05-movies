@@ -18,7 +18,15 @@ const Cast = () => {
       });
   }, [movieId]);
 
-  return <>{cast && <CastCard inCast={cast} />}</>;
+  return (
+    <>
+      {cast?.length > 0 ? (
+        <CastCard inCast={cast} />
+      ) : (
+        `Sorry, but we don't have any cast information for this movie`
+      )}
+    </>
+  );
 };
 
 export default Cast;
